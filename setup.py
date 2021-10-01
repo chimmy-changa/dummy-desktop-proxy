@@ -67,7 +67,9 @@ setuptools.setup(
     python_requires="~=3.6",
     install_requires=["aiohttp>=3.7.4"],
     tests_require=tests_require,
-    extras_require={"dev": ["aiohttp-devtools", "black", "ruamel.yaml" ] + tests_require},
+    extras_require={
+        "dev": ["aiohttp-devtools", "black", "ruamel.yaml"] + tests_require
+    },
     entry_points={
         "matlab_desktop_proxy_configs": [
             "default_config = matlab_desktop_proxy.default_config:default_config"
