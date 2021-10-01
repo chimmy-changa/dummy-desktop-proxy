@@ -129,7 +129,7 @@ def patch_env_variables_fixture(monkeypatch):
     Args:
         monkeypatch : Built-in pytest fixture
     """
-    monkeypatch.setenv(mwi_env.get_env_name_base_url(), "localhost")
+    monkeypatch.setenv(mwi_env.get_env_name_base_url(), "/matlab")
     monkeypatch.setenv(mwi_env.get_env_name_app_port(), "8900")
     monkeypatch.setenv(mwi_env.get_env_name_app_host(), "localhost")
     monkeypatch.setenv(mwi_env.get_env_name_network_license_manager(), "123@nlm")
