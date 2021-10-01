@@ -121,7 +121,7 @@ jobs:
           cd ./anaconda
           conda skeleton pypi dummy-desktop-proxy
           python parse_meta_file.py          
-          conda build ./dummy-desktop-proxy --python 3.6 --output-folder ./build
+          conda build ./dummy-desktop-proxy --python 3.6 -c conda-forge -c anaconda --output-folder ./build
           $CONDA/bin/anaconda upload --label main ./linux-64/dummy*.tar.gz
 
 #TODO: Update package name in multiple lines in run section
